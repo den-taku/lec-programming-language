@@ -6,6 +6,11 @@ public class Leaf implements BinarySearchTree {
         return false;
     }
 
+    public BinarySearchTree insert(int n) {
+        // a new singleton tree holding n
+        return new Branch(new Leaf(), n, new Leaf());
+    }
+
     // Constructor
     public Leaf() {
         // nothing to initialize

@@ -9,5 +9,7 @@ public class Main {
 
         boolean test1 = t6.find(30); // should be true
         boolean test2 = t6.find(13); // should be false
+
+        BinarySearchTree t7 = t6.insert(23);
     }
 }
