@@ -4,6 +4,12 @@ public class Branch implements BinarySearchTree {
     private int v;
     private BinarySearchTree right;
 
+    public boolean find(int n) {
+        if (n == v) { return true; }
+        else if (n < v) { return left.find(n); }
+        else /* n > v */ { return right.find(n); }
+    }
+
     // Constructor
     public Branch(BinarySearchTree left, int v, BinarySearchTree right) {
         this.left = left;
