@@ -11,5 +11,16 @@ public class Main {
         boolean test2 = t6.find(13); // should be false
 
         BinarySearchTree t7 = t6.insert(23);
+        BinarySearchTree t8 = t6.insert(0);
+
+        boolean test3 = t7.find(23);  // should be true
+        boolean test4 = t8.find(30);  // should be true
+        boolean test5 = t8.find(23);  // should be false
+
+        BinarySearchTree t9 = t8.delete(30);
+
+        boolean test6 = t9.find(30);  // should be false
+        boolean test7 = t9.find(48);  // should be true
+
     }
 }
