@@ -1,3 +1,4 @@
 public interface BinarySearchTree {
-    boolean accept(Find v);
+    boolean accept(BSTVisitorB v);
+    BinarySearchTree accept(BSTVisitorBST v);
 }

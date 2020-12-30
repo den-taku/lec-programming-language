@@ -9,7 +9,11 @@ public class Branch implements BinarySearchTree {
         this.right = right;
     }
 
-    public boolean accept(Find visitor) {
+    public boolean accept(BSTVisitorB visitor) {
+        return visitor.caseBranch(left, v, right);
+    }
+
+    public BinarySearchTree accept(BSTVisitorBST visitor) {
         return visitor.caseBranch(left, v, right);
     }
 }

@@ -2,7 +2,11 @@ public class Leaf implements BinarySearchTree {
     public Leaf() {
     }
 
-    public boolean accept(Find visitor) {
+    public boolean accept(BSTVisitorB visitor) {
+        return visitor.caseLeaf();
+    }
+
+    public BinarySearchTree accept(BSTVisitorBST visitor) {
         return visitor.caseLeaf();
     }
 }
