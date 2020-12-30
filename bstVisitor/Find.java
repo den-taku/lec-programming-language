@@ -1,4 +1,4 @@
-public class Find {
+public class Find implements BSTVisitorB {
     private int n;
 
     public Find(int n) {
