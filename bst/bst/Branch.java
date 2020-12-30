@@ -1,3 +1,5 @@
+package bst;
+
 public class Branch implements BinarySearchTree {
     // instance variables to hold a number and subtrees
     private final BinarySearchTree left;

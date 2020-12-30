@@ -1,3 +1,5 @@
+import bst.*;
+
 public class Main {
     public static void main(String[] arg) {
         BinarySearchTree t1 = new Branch(new Leaf(), 10, new Leaf());
